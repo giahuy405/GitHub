@@ -46,19 +46,17 @@
      4. lên github tạo pull request, merge nhánh trung gian vào master 
 
      5. quay lại máy, checkout về master (git checkout master). git pull 
-     5. xóa nhánh con
+     6. xóa nhánh con
       + kiểm tra ds nhánh ( git branch )
       + lệnh xóa nhánh ( git branch -D ten-nhanh )
+     
+      git log --oneline ( kiểm tra toàn bộ code cũ )
+      git reset --hard ( xóa toàn bộ thay đổi trước lần commit gần nhất )
+      git rest --hard commitId
 
-    <h3>Payment</h3>
-    <h3>Payment</h3>
-    <h3>Payment</h3>
-    <h3>Payment</h3>
-
-
-     <h4>Booking</h4>
-     <h4>Booking</h4>
-     <h4>Booking</h4>
-     <h4>Booking</h4>
+      git push --force ( có dòng lệnh này mới đẩy lên github được )
+      git stash  : ẩn thay đổi hiện tại-code 
+      git stash pop : hiện code trở lại 
+      git cherry-pick commitId
 </body>
 </html>
