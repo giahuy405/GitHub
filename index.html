@@ -28,9 +28,28 @@
         git branch tên-nhánh
         git checkout tên-nhánh
      2.git commit -m "chore" : xóa kí tự, code lặt vặt
-      git commit -m "feature" : phát triển tính năng mới
-      git commit -m "fix" : sửa code  
-     3. sau khi phát triển xong, tạo Pull request để xin merge nhánh booking vào master 
-     4. quay lại máy, checkout về master(git checkout master). git pull 
+        git commit -m "feature" : phát triển tính năng mới
+        git commit -m "fix" : sửa code  
+     3. xong việc, ở local, quay lại master ( git pull ), tạo nhánh trung gian 
+     (vd: production-signup, prod-booking,..) merge nhánh con vào nhánh trung gian, fix xung đột nếu có 
+     sau đó git add, git commit, git push nhánh trung gian lên github 
+
+     tạo nhánh trung gian pro-booking sau đó ta chuyển qua prod-booking merge nó với nhánh booking
+     (git merge ten-nhanh)
+
+     
+     nếu trong trường hợp merge nhánh con vào nhánh trung gian mà ko có lỗi,
+      thì git push luôn nhánh trung gian lên github
+
+     4. lên github tạo pull request, merge nhánh trung gian vào master 
+
+     5. quay lại máy, checkout về master (git checkout master). git pull 
+     5. xóa nhánh con
+      + kiểm tra ds nhánh ( git branch )
+      + lệnh xóa nhánh ( git branch -D ten-nhanh )
+
+
+
+
 </body>
 </html>
